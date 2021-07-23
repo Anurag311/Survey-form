@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta name="description" content="Survey form-Freecodecamp">
+    <meta name="author" content="Anurag">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <h1 id="title">Freecodecamp-Survey form</h1>
+    <p id="description"><b>Thank you</b> for taking the Survey.</p>
+    </header>
+    <main>
+        <div id="box">
+        <form id="survey-form">    
+            <div class="group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+            </div>
+            <div class="group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="emailAA"><br>
+            </div>
+            <div class="group">
+            <label for="number">Age</label>
+            <input type="number" id="number" name="number" min="1" max="150" placeholder="Enter your age"><br>
+            </div>
+            <div class="group">
+            <label for="drop-down">What is your current position?</label><br>
+            <select name="drop-down" id="drop-down">
+                <option value="Student">Student</option>
+                <option value="Part-time-job">Part-time-job</option>
+                <option value="Full-time-job">Full-time-job</option>
+                <option value="Internship">Internship</option>
+                <option value="Other">Other</option>
+            </select><br>
+            </div>
+            <div class="group">
+            <label class="become">What do you want to become?</label><br>
+            <input type="radio" name="become" id="Front-End" value="Front-End Developer"><label for="Front-End">Front-End Developer</label><br>
+            <input type="radio" name="become" id="back-End" value="Backend Developer"><label for="back-End">Back-End Developer</label><br>
+            <input type="radio" name="become" id="Full stack" value="Full stack Developer"><label for="Full stack">Full stack Developer</label><br>
+            <input type="radio" name="become" id="Other" value="Other"><label for="Other">Other</label><br>
+            </div>
+            <div class="group">
+            <label class="learn">What do you learn from this website?</label><br>
+            <input type="checkbox" name="learn" id="HTML" value="HTML"><label for="HTML">HTML</label><br>
+            <input type="checkbox" name="learn" id="CSS" value="CSS"><label for="CSS">CSS</label><br>
+            <input type="checkbox" name="learn" id="Javascript" value="Javascript"><label for="Javascript">Javascript</label><br>
+            <input type="checkbox" name="learn" id="Data-structure" value="Data-structure"><label for="Data-structure">Data-structure</label><br>
+            <input type="checkbox" name="learn" id="Python" value="Python"><label for="Python">Python</label><br>
+            </div>
+            <div class="group">
+            <label for="comments">Comments</label><br>
+             <textarea id="comments" placeholder="Enter your comments..."></textarea><br>
+            </div>
+             <input type="submit" id="submit">
+        </form>
+    </div>
+    </main>
+    <footer>
+        <p id="made">
+            Made By Anurag
+        </p>
+    </footer>
+</body>
+</html>
