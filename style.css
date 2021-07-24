@@ -9,29 +9,48 @@
     overflow: hidden;
 }
 body{
-    background:linear-gradient(45deg,rgb(0, 140, 255),yellow,pink,orange,red);
+    background-repeat:round;
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg");
 }
 #title{
     text-align: center;
     font-family:'Zen Tokyo Zoo', 'cursive';
     font-size: 5rem;
+    color: rgb(255, 255, 255);
 }
 #description{
     text-align: center;
+    color: aliceblue;
     font-family: 'Roboto Slab', 'serif';
     font-size: 1rem;
-    margin-bottom: 1rem; ;
+    margin-bottom: 1rem; 
 }
+#title, #description{
+    animation-name: change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+@keyframes change {
+    0%   {color: red;}
+    20%  {color: rgb(253, 251, 251);}
+    40%  {color: rgba(255, 238, 0, 0.432);}
+    60%  {color: rgba(0, 255, 255, 0.329);}
+    80%  {color: rgb(226, 51, 226);}
+    100% {color: rgb(4, 255, 138);}
+  }
+#survey-form{
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(45deg,red,rgb(0, 132, 255),rgb(13, 236, 236));
+}
+
 #box{
     margin-left: auto;
     margin-right: auto;
     display: block;
     width: 40rem;
-}
-#survey-form{
-    background-color: rgb(253, 201, 123);
-    padding: 0.5rem;
-    border-radius: 1.5rem;
+    opacity: .8;
 }
 .group{
     margin-bottom: 0.5rem;
@@ -66,6 +85,7 @@ body{
 }
 #submit:hover{
     transform:scale(.9);
+    opacity: 0.8;
 }
 textarea{
     height: 5rem;
@@ -82,10 +102,10 @@ textarea{
 }
 @keyframes to-fro {
     0%   {color:red; left:0rem; bottom:0rem;}
-    25%  {color: black; left: 60rem; bottom:0rem;}
-    50%  {color:rgb(206, 24, 166); left: 65rem; bottom:0rem;}
+    25%  {color: rgb(243, 230, 230); left: 60rem; bottom:0rem;}
+    50%  {color:rgb(255, 230, 0); left: 65rem; bottom:0rem;}
     75%  {color:rgb(22, 236, 154); left:40rem; bottom:0rem;}
-    100% {color:rgb(132, 0, 255); left:0rem; bottom:0rem;}
+    100% {color:rgb(0, 255, 234); left:0rem; bottom:0rem;}
   }
  @media (max-width:56rem) {
     html{
@@ -100,9 +120,9 @@ textarea{
     
     @keyframes to-fro {
     0%   {color:red; left:0rem; bottom:0rem;}
-    25%  {color: black; left: 29rem; bottom:0rem;}
-    50%  {color:rgb(206, 24, 166); left: 2rem; bottom:0rem;}
+    25%  {color: rgb(255, 255, 255); left: 29rem; bottom:0rem;}
+    50%  {color:rgb(121, 201, 248); left: 2rem; bottom:0rem;}
     75%  {color:rgb(22, 236, 154); left:2rem; bottom:0rem;}
-    100% {color:rgb(132, 0, 255); left:0rem; bottom:0rem;}
+    100% {color:rgb(229, 255, 0); left:0rem; bottom:0rem;}
     }
  }
